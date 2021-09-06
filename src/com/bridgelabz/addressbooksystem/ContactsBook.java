@@ -3,7 +3,7 @@ package com.bridgelabz.addressbooksystem;
 public class ContactsBook {
     private String firstName;
     private String lastName;
-    private String Address;
+    private String address;
     private String city;
     private String state;
     private int zip;
@@ -12,6 +12,7 @@ public class ContactsBook {
     ContactsBook(String firstName, String lastName, String address, String city, String state, int zip, long phone) {
         this.firstName = firstName;
         this.lastName = lastName;
+        this.address = address;
         this.city = city;
         this.state = state;
         this.zip = zip;
@@ -30,10 +31,10 @@ public class ContactsBook {
         this.lastName = lastName;
     }
     public String getAddress() {
-        return Address;
+        return address;
     }
     public void setAddress(String address) {
-        Address = address;
+        this.address = address;
     }
     public String getCity() {
         return city;
